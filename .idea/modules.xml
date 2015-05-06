@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RestJava.iml" filepath="$PROJECT_DIR$/RestJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/by.NGWeb.RestJava/by.NGWeb.RestJava.iml" filepath="$PROJECT_DIR$/by.NGWeb.RestJava/by.NGWeb.RestJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/by.NGWeb.Restjava.Test/by.NGWeb.Restjava.Test.iml" filepath="$PROJECT_DIR$/by.NGWeb.Restjava.Test/by.NGWeb.Restjava.Test.iml" />
+    </modules>
+  </component>
+</project>

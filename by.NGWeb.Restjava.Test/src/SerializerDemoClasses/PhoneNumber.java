@@ -10,7 +10,6 @@ public class PhoneNumber {
 
     private String type;
     private String number;
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      *
@@ -46,13 +45,5 @@ public class PhoneNumber {
      */
     public void setNumber(String number) {
         this.number = number;
-    }
-
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 }

@@ -4,6 +4,8 @@ import SerializerDemoClasses.Example;
 import by.NGWeb.RestJava.JSonSerializer.JsonSerializer;
 import org.junit.Test;
 
+import java.lang.reflect.InvocationTargetException;
+
 /**
  * Created by Siarhei Shchypanau on 5/6/2015.
  */
@@ -11,10 +13,10 @@ public class SerializerTest {
 
 
     @Test
-    public void testDeserealize() throws InstantiationException, IllegalAccessException {
+    public void testDeserealize() throws InstantiationException, IllegalAccessException, InvocationTargetException {
 
         JsonSerializer serializer = new JsonSerializer();
-        Example ex =  serializer.Deserealize(Example.class,"{\n" +
+        Example ex =  serializer.Deserialize(Example.class, "{\n" +
                 "    \"firstName\": \"John\",\n" +
                 "    \"lastName\": \"Smith\",\n" +
                 "    \"age\": 25,\n" +

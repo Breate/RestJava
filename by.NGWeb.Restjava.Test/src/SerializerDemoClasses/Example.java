@@ -1,5 +1,7 @@
 package SerializerDemoClasses;
 
+import by.NGWeb.RestJava.JSonSerializer.Annotation.Generic;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -15,7 +17,6 @@ public class Example {
     private Integer age;
     private Address address;
     private List<PhoneNumber> phoneNumbers = new ArrayList<PhoneNumber>();
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      *
@@ -103,16 +104,8 @@ public class Example {
      * @param phoneNumbers
      * The phoneNumbers
      */
+    @Generic(Type = PhoneNumber.class)
     public void setPhoneNumbers(List<PhoneNumber> phoneNumbers) {
         this.phoneNumbers = phoneNumbers;
     }
-
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
-    }
-
 }
