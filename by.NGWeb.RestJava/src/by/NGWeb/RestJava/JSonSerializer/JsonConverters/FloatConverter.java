@@ -3,12 +3,12 @@ package by.NGWeb.RestJava.JSonSerializer.JsonConverters;
 /**
  * Created by Siarhei Shchypanau on 5/6/2015.
  */
-public class IntConverter implements IConverter {
+public class FloatConverter implements IConverter {
     @Override
     public boolean canConvert(Class t) {
-        if(t==int.class)
+        if(t==float.class)
             return true;
-        if(t==Integer.class)
+        if(t==Float.class)
             return true;
         return false;
     }
@@ -16,9 +16,9 @@ public class IntConverter implements IConverter {
     @Override
     public Object convert(String str) {
         try {
-            return Integer.parseInt(str);
+            return Float.parseFloat(str);
         }catch (Exception ex){
-            return 0;
+            return (Float)0.0F;
         }
     }
 }
